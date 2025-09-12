@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gurlene's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    header {
+      background: #6C63FF;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      transition: transform 0.3s ease;
+    }
+
+    header h1:hover {
+      transform: scale(1.1);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    .profile-img {
+      width: 140px;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+      transition: transform 0.4s;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05) rotate(3deg);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .section {
+      margin: 40px 0;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #6C63FF;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background: #6C63FF;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      border-radius: 2px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 6px 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    li:hover {
+      transform: translateX(5px);
+      color: #6C63FF;
+    }
+
+    .contact a {
+      color: #6C63FF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #3b36a8;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/140" alt="Profile Photo" class="profile-img">
+    <h1>Gurlene Kaur</h1>
+    <p>Student | Aspiring Web Developer | Tech Lover</p>
+  </header>
+
+  <div class="container">
+
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a BCA student passionate about web development, programming, and creative design.
+        I enjoy solving problems, learning new skills, and building beautiful web experiences.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3</li>
+        <li>Python Basics</li>
+        <li>VS Code</li>
+        <li>Responsive Design</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Hosted a Farewell Party at College</li>
+        <li>Completed Projects in HTML & CSS</li>
+        <li>Consistent Academic Performance</li>
+      </ul>
+    </section>
+
+    <section class="section contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:gurleen@example.com">gurlene@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/gurlene</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Gurlene's Portfolio | Made with 💜 and caffeine.
+  </footer>
+
+</body>
+</html>
